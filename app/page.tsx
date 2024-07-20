@@ -1,8 +1,8 @@
+import Camp from "@/components/Camp";
 import { Features } from "@/components/Features";
-import { GetApp } from "@/components/GetApp";
-import {Camp} from "@/components/Camp";
+import Footer from "@/components/Footer";
 import { Guide } from "@/components/Guide";
-import Hero from "@/components/hero";
+import Hero from "@/components/Hero";
 import Image from "next/image";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
     <Camp/>
     <Guide/>
     <Features/>
-    <GetApp/>
+    <Footer/>
     </>
   )
 }
