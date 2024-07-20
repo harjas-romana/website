@@ -67,10 +67,14 @@ const Camp = () => {
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
         <div className="bg-blue-900 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
           <h2 className="regular-24 md:regular-32 2xl:regular-64 capitalize text-white">
-            <strong>The Conference</strong> will be held at Auditorium
+            <strong>About</strong> VIT
           </h2>
           <p className="regular-14 xl:regular-16 mt-5 text-white">
-          Early bird registration is now open! Take advantage of our discounted rates by registering before July 31, 2024. For more information on registration fees, accommodation, and travel, please visit our Registration page.
+          The VIT legacy, which started from Vellore Engineering College 35 years ago to four Universities in India, today, is a result of constant efforts to impart high quality of education. The Govt. of India has recognized VIT as No. 1 Private Institution for Innovation, ARIIA 2019, and the recent recognition, as an Institution of Eminence, has paved a way to focus more on research with international collaborations to move up in the global ranking and contribute in the capacity building of our nation.          </p>
+          <p
+          className="regular-14 xl:regular-16 mt-5 text-white">
+          VIT Bhopal University, envisioned with a new global outlook will empower its aspirants to attain excellence through learning. The comprehensive teaching methodology designed by the University, redefines the approach to learning, educating and building knowledge-based societies in the country. Collaboration with reputed national and international organizations and strategic partnerships with universities around the world are being established, to prepare a globally competent generation of professionals.
+
           </p>
           <Image 
             src="/quote.svg"

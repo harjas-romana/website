@@ -20,19 +20,22 @@ const Hero = () => {
         className='absolute left-[-5px] top-[-30px] w-10 lg:w-[50px]'
         /> */}
         <h1
-        className="regular-10 bold-52 lg:bold-88 text-gray-20">
+        className="regular-10 bold-52 lg:bold-72 text-gray-10">
           <strong
           className='text-white'>
             International Conference 
             </strong>
-            <span className="italic"> at VIT Bhopal University</span>
+            <span className="italic"> on Computer Vision, IoT and Applications</span>
+            <strong
+            className='text-white'> IICVIA 2025</strong>
         </h1>
         <p
-        className="regular-22 mt-4 text-white xl:max-w-[520px]">
-          The International Conference on Optimization Techniques and Data Analysis (ICOPTDA) 2023 is a premier event that brings together researchers, academicians, and industry experts from around the world to share their knowledge and experiences in the fields of optimization techniques and data analysis. This year, we are proud to host ICOPTDA 2023 at VIT Bhopal University, India, from [Date] to [Date].
-        </p>
+        className='italic text-white'>By Division of Core Computing, School of Computing Science and Engineering (SCOPE)</p>
+        <p
+        className="regular-14 mt-4 text-white">
+The International Conference on Computer Vision, IoT, and Applications (ICCVIA 2025) is a conference that specifically addresses the integration of advanced research in computer vision, the Internet of Things (IoT), and their practical implementations. This conference is a momentous occasion for scholars, practitioners, and professionals in various domains, offering an opportunity to engage in discussions about progress, difficulties, and forthcoming developments. The technical session of the conference will be conducted in hybrid (physical and online) mode. All the presented papers will be published by IEEE (In process).        </p>
         <div
-        className='my-11 flex flex-wrap gap-5'>
+        className='my-3 flex flex-wrap gap-5'>
           {/* <div
           className='flex-items-center gap-2'>
             {Array(5).fill(1).map((_,index) => (
@@ -52,7 +55,7 @@ const Hero = () => {
             >Excellent Reviews</span>
           </p> */}
         </div>
-        <div className='flex flex-col w-full gap-3 sm:flex-row'>
+        <div className='flex flex-col w-full gap-4 sm:flex-row'>
           <Button type={'button'}
           title={'Register Now'}
           variant={'btn_dark_blue'}/>
@@ -86,7 +89,7 @@ const Hero = () => {
                 <p
                 className='regular-16 block text-gray-20'>Date</p>
                 <p
-                className='bold-20 text-white'>14/04/2024</p>
+                className='bold-20 text-white'>24/04/25 - 26/04/25</p>
               </div>
               <div
               className='flex flex-col'>

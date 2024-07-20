@@ -1,11 +1,13 @@
 export const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Home' },
-    { href: '/', key: 'technicalTracks', label: 'Technical Tracks' },
-    { href: '/', key: 'committees', label: 'Committees' },
-    { href: '/', key: 'speakers', label: 'Speakers' },
-    { href: '/', key: 'paperSubmission', label: 'Paper Submission' },
-    { href: '/', key: 'contact', label: 'Contact' },
-  ];
+  { href: '/', key: 'home', label: 'Home', anchor: 'home'},
+  { href: '/', key: 'dates', label: 'Dates', anchor:'Dates'},
+  { href: '/', key: 'Commitee', label: 'Commitee'},
+  { href: '/', key: 'paperSubmission', label: 'Paper Submission', anchor:''},
+  { href: '/', key: 'speakers', label: 'Speakers', anchor:''},
+  { href: '/', key: 'about', label: 'About', anchor:''},
+  { href: '/', key: 'contact', label: 'Contact', anchor:''},
+];
+
   export const PEOPLE_URL = [
     '/person-1.png',
     '/person-2.png',
@@ -16,32 +18,65 @@ export const NAV_LINKS = [
   // FEATURES SECTION
   export const FEATURES = [
     {
-      title: 'Real maps can be offline',
-      icon: '/map.svg',
-      variant: 'green',
-      description:
-        'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      title: 'Prof. Rajeev Srivastava',
+      icon: '/Dr._Rajeev.jpg',
+      iconStyle: {
+        width: '100px',
+        height: '100px',
+        borderRadius: '80%',
+        objectFit: 'cover'
+      },
+      description: 'Director, IIIT Ranchi, India'
     },
     {
-      title: 'Set an adventure schedule',
-      icon: '/calendar.svg',
-      variant: 'green',
+      title: 'Prof. Chiranjeev Kumar',
+      icon: '/Prof_Chiranjeev.jpg',
+      iconStyle: {
+        width: '100px',
+        height: '100px',
+        borderRadius: '80%',
+        objectFit: 'cover'
+      },
       description:
-        "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
+        "IIT ISM, Dhanbad, India",
     },
     {
-      title: 'Technology using augment reality',
-      icon: '/tech.svg',
+      title: 'Prof. Kapal Dev',
+      icon: '/Prof_Kapal.jpg',
+      iconStyle: {
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        objectFit: 'cover'
+      },
       variant: 'green',
-      description:
-        'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
+      description:"Munster Technological University, Ireland"
     },
     {
-      title: 'Many new locations every month',
-      icon: '/location.svg',
+      title: 'Prof. Masood Siddiqui',
+      icon: '/prof_masood_siddiqui.jpg',
+      iconStyle: {
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        objectFit: 'cover'
+      },
       variant: 'orange',
       description:
-        'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+        'Lucknow University, India',
+    },
+    {
+      title: 'Prof. Ts. Lim Shen Huoy',
+      icon: '/prof_ts_lim_shen_huoy.jpg',
+      iconStyle: {
+        width: '40px',
+        height: '40px',
+        borderRadius: '50%',
+        objectFit: 'cover'
+      },
+      variant: 'orange',
+      description:
+        'TARUMT, Malaysia',
     },
   ];
   
@@ -50,25 +85,20 @@ export const NAV_LINKS = [
     {
       title: 'Learn More',
       links: [
-        'About Hilink',
-        'Press Releases',
-        'Environment',
-        'Jobs',
-        'Privacy Policy',
-        'Contact Us',
+        'About VIT Bhopal',
+        'Home',
+        'Committee',
+        'Admissions',
       ],
-    },
-    {
-      title: 'Our Community',
-      links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
     },
   ];
   
   export const FOOTER_CONTACT_INFO = {
     title: 'Contact Us',
     links: [
-      { label: 'Admin Officer', value: '123-456-7890' },
-      { label: 'Email Officer', value: 'hilink@akinthil.com' },
+      { label: 'Phone', value: '+91 9040946658' },
+      { label: 'Email', value: 'iccvia@vitbhopal.ac.in' },
+      {label: 'Address', value: 'VIT Bhopal University, Sehore, Madhya Pradesh, India'}
     ],
   };
   

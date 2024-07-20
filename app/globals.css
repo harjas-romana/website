@@ -15,8 +15,149 @@ body {
 }
 
 @layer utilities {
+  .box-header {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-bottom: 3px;
+    color: #34C759;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transform: translateZ(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    transform: translateZ(20px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-title {
+    font-size: 45px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 390px;
+    transform: translateZ(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-text {
+    font-size: 16px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 60px;
+    max-width: 1000px;
+    transform: translateZ(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .box-header:hover {
+    transform: translateZ(20px) scale(1.05);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-title:hover {
+    transform: translateZ(20px) scale(1.05);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-text:hover {
+    transform: translateZ(20px) scale(1.05);
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .box-header:active {
+    transform: translateZ(20px) scale(0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box-title:active {
+    transform: translateZ(20px) scale(0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box-text:active {
+    transform: translateZ(20px) scale(0.95);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
   .btn_white { 
     @apply  border-white bg-white px-8 py-3 text-green-50
+  }
+  .committee-card {
+    margin-bottom: 32px;
+    padding: 24px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) translateZ(20px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .committee-card:hover {
+    transform: perspective(1000px) translateZ(30px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .committee-card h4 {
+    margin-top: 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 16px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .committee-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .committee-card li {
+    margin-bottom: 16px;
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .committee-card li a {
+    text-decoration: none;
+    color: #337ab7;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .committee-card li a:hover {
+    color: #23527c;
+    text-decoration: underline;
+  }
+  
+  .committee-card li:last-child {
+    margin-bottom: 0;
+  }
+  
+  .committee-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    transform: translateZ(-20px);
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .committee-card:hover::before {
+    transform: translateZ(-30px);
+    box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.2);
   }
   .btn_white_text  { 
     @apply  border-white bg-white px-8 py-3 text-gray-90
@@ -38,7 +179,7 @@ body {
   }
   
   .max-container {
-    @apply mx-auto max-w-[1440px];
+    @apply mx-auto max-w-[1540px];
   }
 
   .padding-container {
@@ -93,6 +234,9 @@ body {
   .regular-14 {
     @apply text-[14px] font-[400];
   }
+  .regular-13 {
+    @apply text-[13px] font-[300];
+  }
 
   .medium-14 {
     @apply text-[14px] font-[600];
@@ -100,6 +244,9 @@ body {
 
   .bold-88 {
     @apply text-[88px] font-[700] leading-[120%];
+  }
+  .bold-72 {
+    @apply text-[72px] font-[700] leading-[120%];
   }
 
   .bold-64 {
@@ -129,6 +276,9 @@ body {
   .bold-16 {
     @apply text-[16px] font-[700];
   }
+  .bold-12 {
+    @apply text-[12px] font-[700];
+  }
 
   /* Hero */
   /* .hero-map {
@@ -150,13 +300,86 @@ body {
 
   /* Feature */
   .feature-phone {
-    @apply absolute top-[13%] z-10 hidden max-w-[1500px] rotate-[15deg] md:-left-16 lg:flex  3xl:left-20;
+    @apply absolute h-auto w-[40%] top-[13%] z-10 hidden max-w-[1500px] md:-left-16 lg:flex;
+  }
+  .dates {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dates-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .date-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px) translateZ(20px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .date-card:hover {
+    transform: perspective(1000px) translateZ(30px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .date {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    color: #333;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event {
+    font-size: 18px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .date-card::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    transform: translateZ(-20px);
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .date-card:hover::before {
+    transform: translateZ(-30px);
+    box-shadow: 0 -15px 30px rgba(0, 0, 0, 0.2);
+  }
+  .large-icon img {
+    width: 150px;
+    height: 150px;
+    border-radius: 80%;
+    object-fit: cover;
   }
 
   /* Get App */
   .get-app {
     @apply max-container relative flex w-full  flex-col justify-between gap-32 overflow-hidden bg-green-90 bg-pattern bg-cover bg-center bg-no-repeat px-6 py-12 text-white sm:flex-row sm:gap-12 sm:py-24 lg:px-20 xl:max-h-[598px] 2xl:rounded-5xl;
   }
+  
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
